@@ -1,0 +1,502 @@
+{
+	"info": {
+		"_postman_id": "eb36c8a3-8389-43b0-996c-ad876b95fbc1",
+		"name": "Media",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Category Managements",
+			"item": [
+				{
+					"name": "all category get from server",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/category",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "category add to server",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Bago",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/terry/Pictures/bago.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/category",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get category by id ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/category/623b6b4b78fbeda2e8d3783",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"category",
+								"623b6b4b78fbeda2e8d3783"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch category ",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/terry/Pictures/BasaiNoMoreCry.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/category/623b7cc239738a89d6f38ece",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"category",
+								"623b7cc239738a89d6f38ece"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "drop category from server",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/category/623b7c9139738a89d6f38eca",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"category",
+								"623b7c9139738a89d6f38eca"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Managements",
+			"item": [
+				{
+					"name": "all user from server",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/user",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register user ",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Ba Sia Sia",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "siasia@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/terry/Pictures/65uauh.jpg"
+								},
+								{
+									"key": "password",
+									"value": "123123123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/user/register",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "single get user from server",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/user/623c0696749ae8a51606c0a7",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"623c0696749ae8a51606c0a7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch user to server",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/terry/Pictures/BasaiNoMoreCry.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/user/623c1eaa417173239466bffb",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"623c1eaa417173239466bffb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user account to server",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/user/623c1e67417173239466bff6",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"623c1e67417173239466bff6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login to server",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "shinthantmin32@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123123123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/user",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post Managements",
+			"item": [
+				{
+					"name": "get all post from server",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/post",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Add to server",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNjMWU2NzQxNzE3MzIzOTQ2NmJmZjYiLCJuYW1lIjoiU2hhciBOYXRoYXIgTGlubiIsImVtYWlsIjoic2hhcnNoYXJAZ21haWwuY29tIiwiaW1hZ2UiOiIxNjQ4MTA3MTEwOTg5c2hhcm5hdGhhckxpbm4uanBnIiwiY3JlYXRlZCI6IjIwMjItMDMtMjRUMDc6Mjk6NTEuNTM5WiIsImlhdCI6MTY0ODExOTAzNiwiZXhwIjoxNjQ4MTIyNjM2fQ.z6VfzfFJTEtYyWo6qCXEXXMDoJ9Q4sL3WnZzd_W4D9A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category",
+									"value": "623b7c9139738a89d6f38eca",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Bago NEWS ",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "Bago NEWS Is Not Bad",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/terry/Pictures/bago.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/post",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post get By Id ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/post/623c4bff69468a17b12329e4",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"post",
+								"623c4bff69468a17b12329e4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post get by category ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/post/category/623b6b4b78fbeda2e8d3783c",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"post",
+								"category",
+								"623b6b4b78fbeda2e8d3783c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post get by user ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/post/user/623c1e67417173239466bff6",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"post",
+								"user",
+								"623c1e67417173239466bff6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch post with user id ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNjMDY5Njc0OWFlOGE1MTYwNmMwYTciLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwiaW1hZ2UiOiIxNjQ4MTAxMDE0MTYyc2hpbm5UaGFudE1pbm4ucG5nIiwiY3JlYXRlZCI6IjIwMjItMDMtMjRUMDU6NDk6MjYuNjgxWiIsImlhdCI6MTY0ODEyMjI5OSwiZXhwIjoxNjQ4MTI1ODk5fQ.Jg89c6DSmVe6pQrI2JFxoUhzcoQx5FZ2Ipo040Jis5A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/terry/Pictures/65uauh.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/post/623c4bff69468a17b12329e4",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"post",
+								"623c4bff69468a17b12329e4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete post from server",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNjMDY5Njc0OWFlOGE1MTYwNmMwYTciLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwiaW1hZ2UiOiIxNjQ4MTAxMDE0MTYyc2hpbm5UaGFudE1pbm4ucG5nIiwiY3JlYXRlZCI6IjIwMjItMDMtMjRUMDU6NDk6MjYuNjgxWiIsImlhdCI6MTY0ODE0Mzg1OSwiZXhwIjoxNjQ4MTQ3NDU5fQ.5TaWyRx6TpIINcc9siloF75UrKEGs9nzcAikW1vncf0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/post/623c4d6d69468a17b1232a11",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"post",
+								"623c4d6d69468a17b1232a11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

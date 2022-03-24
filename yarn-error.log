@@ -1,0 +1,50 @@
+Arguments: 
+  /home/terry/.nvm/versions/node/v16.13.2/bin/node /usr/local/bin/yarn add express express-fileupload joi mongoose dotenv jsonwebtoken bcrypyjs
+
+PATH: 
+  /home/terry/.nvm/versions/node/v16.13.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/terry/Android/Sdk/emulator:/home/terry/Android/Sdk/tools:/home/terry/Android/Sdk/tools/bin:/home/terry/Android/Sdk/platform-tools:/home/terry/Android/Sdk/emulator:/home/terry/Android/Sdk/tools:/home/terry/Android/Sdk/tools/bin:/home/terry/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.13.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/bcrypyjs: Not found
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:67029:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140883:22)
+      at Request.emit (node:events:390:28)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141855:10)
+      at Request.emit (node:events:390:28)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:509:28)
+      at IncomingMessage.emit (node:events:402:35)
+      at endReadableNT (node:internal/streams/readable:1343:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "media",
+    "version": "1.0.0",
+    "description": "Media Project",
+    "main": "app.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "Media",
+      "API"
+    ],
+    "author": "Shinn Thant Minn",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
